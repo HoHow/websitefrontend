@@ -2,7 +2,8 @@ new Vue({
   el: '.app',
   data: {
     blog: '',
-    message: ''
+    message: '',
+    web: ''
   },
   methods: {
     submit: function(){
