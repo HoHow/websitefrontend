@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -13,11 +14,19 @@
   </head>
   <body>
     
-    
+    <div class='app'>
+        <div class="form-group">
+          <label>網址：</label>
+          <input class='input_url form-control' type='text'  v-model='blog' size='100' v-on:keyup.enter='submit'>
+          <button class='btn btn-primary'  type='submit' v-on:click='submit'>送出</button>
+        </div>
+    </div>
     
     
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
+    <script src="./js/pages/index.js"></script>
+    <script src="./js/libs/API.js"></script>
   </body>
 </html>
